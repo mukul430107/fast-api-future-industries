@@ -4,3 +4,4 @@ reportlab
 python-multipart
 pyjwt
 passlib[bcrypt]
+websockets>=11.0.3
