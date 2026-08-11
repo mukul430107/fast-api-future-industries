@@ -210,3 +210,6 @@ def download_pdf(current_user: UserDB = Depends(get_current_user)):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
+    @app.get("/")
+def read_root():
+    return {"message": "API is running live on Render!"}
